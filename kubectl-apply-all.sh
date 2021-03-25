@@ -12,4 +12,7 @@
 #
 # Apply the base Soucegraph deployment
 # shellcheck disable=SC2068
+echo "DID YOU APPLY ALLOW-LIST TO FRONTEND INGRESS????????"
+echo "SLEEPING FOR 30 STOP ME IF YOU DIDN'T"
+sleep 30
 kubectl apply --prune -l deploy=sourcegraph -f base --recursive $@
