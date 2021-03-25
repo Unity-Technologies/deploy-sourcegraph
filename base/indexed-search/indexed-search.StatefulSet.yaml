@@ -39,11 +39,11 @@ spec:
           timeoutSeconds: 5
         resources:
           limits:
-            cpu: "2"
-            memory: 4G
+            cpu: "6"
+            memory: 12G
           requests:
-            cpu: 500m
-            memory: 2G
+            cpu: "2"
+            memory: 6G
         volumeMounts:
         - mountPath: /data
           name: data
@@ -59,10 +59,10 @@ spec:
           # lower lag between a new commit and it being indexed for search.
           limits:
             cpu: "8"
-            memory: 8G
+            memory: 12G
           requests:
             cpu: "4"
-            memory: 4G
+            memory: 8G
         volumeMounts:
         - mountPath: /data
           name: data
